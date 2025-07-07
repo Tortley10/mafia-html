@@ -1,5 +1,5 @@
 function handleGame() {
-    window.location.href = "yes_page.html";
+    window.location.href = "lobby.html";
 }
 
 function handleRoles() {
