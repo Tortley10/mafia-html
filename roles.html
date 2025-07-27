@@ -4,4 +4,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mafia - Reloaded</title>
     <link rel="stylesheet" href="css/main.css">
+            <script>
+            function showRole(Description) {
+                // Shows the selected role
+                if (Description == 1) {
+                    document.getElementById("RoleTitle").innerHTML= "Townsfolk";
+                    document.getElementById("desc").innerHTML = "Just a normal guy. You can vote with your fellow Townsfolk to execute one person. Your goal is to kill all the Werewolves";
+                    document.getElementById("Affiliation").className = "Townsfolk";
+                    document.getElementById("Affiliation").innerHTML = "Affiliation: Townsfolk";
+                }
+                if (Description == 2) {
+                    document.getElementById("RoleTitle").innerHTML= "Werewolf";
+                    document.getElementById("desc").innerHTML = "A beast of the night. You can vote with your park to mark one person for death every night. your goal is to kill all the Townsfolk";
+                    document.getElementById("Affiliation").className = "Werewolf";
+                    document.getElementById("Affiliation").innerHTML = "Affiliation: Werewolf";
+
+                }
+                if (Description == 3) {
+                    document.getElementById("RoleTitle").innerHTML= "Hunter";
+                    document.getElementById("desc").innerHTML = "A local hunter than wandered into town. Every night, you can view the role of a fellow townsfolk. Your goal is to kill all of the Werewolves";
+                    document.getElementById("Affiliation").className = "Townsfolk";
+                    document.getElementById("Affiliation").innerHTML = "Affiliation: Townsfolk";
+
+                }
+            }
+        </script>
 </head>
+<h1>Roles</h1>
+<body>
+    <div id = 'Rolelist'>
+            <h2><span id = 'RoleTitle'>Townsfolk</span></h3>
+            <h3><span id = 'Affiliation' class="Townsfolk">Affiliation: Townsfolk</span></h4>
+            <h4><span id = 'desc'>Just a normal guy. You can vote with your fellow Townsfolk to execute one person. Your goal is to kill all the Werewolves</span></h4>
+    </div>
+    
+    <div class = 'buttons'>
+        <button id = 'RoleName' class = 'button' onclick = "showRole(1)";>Townsfolk</button>
+        <button id = 'RoleName' class = 'button' onclick = "showRole(2)";>Werewolf</button>
+        <button id = 'RoleName' class = 'button' onclick = "showRole(3)";>Hunter</button>
+    </div>
+</body>

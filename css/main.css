@@ -4,7 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f9e3e3;
+    background-color: #855141;
     font-family: 'Arial', sans-serif;
     flex-direction: column;
 }
@@ -21,6 +21,10 @@ h1 {
 h2 {
     font-size: 1.0em;
     color: black;
+}
+
+h3 {
+    font-size: 0.90em;
 }
 
 .buttons {
@@ -44,4 +48,24 @@ footer {
     width: 100%;
     color: #d32f2f;
     text-align: center;
+}
+
+/* Roles */
+
+#Rolelist {
+  background-color: #343e52;
+  width: 600px;
+  max-width: 90%;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+#Rolelist .Townsfolk {
+    color: #4caf50;
+}
+
+#Rolelist .Werewolf {
+    color: #d32f2f;
 }
